@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "MyPerfectice Extension",
+  "version": "0.0.1",
+  "devtools_page": "devtools.html",
+
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": "icon.png",
+    "default_title": "MyPerfectice Automation"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "icons": {
+    "128": "icon.png"
+  },
+
+  "background": {
+    "service_worker": "background.js"
+  },
+
+  "permissions": ["scripting", "tabs", "activeTab"],
+  "host_permissions": ["https://*"]
+}
