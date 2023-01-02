@@ -1,4 +1,4 @@
-# MyPerfectice 
+# MyPerfectice Extension
 An Extension to automate MyPerfectice Tests.
 
 ## NOTE: 
